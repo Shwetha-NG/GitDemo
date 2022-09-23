@@ -16,7 +16,7 @@ class TestOne(BaseClass):
         log = self.getLogger()
         homePage = HomePage(self.driver)
         checkoutPage = homePage.shopItems()
-        log.info("Getting all the card titles!!")
+        log.info("Getting all the card titles!!!!!")
         # checkoutPage = CheckoutPage(self.driver)   # moved to HomePage
         cards = checkoutPage.getCardsTitles()
         i = -1
