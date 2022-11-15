@@ -23,7 +23,7 @@ def setup(request):
     elif browser_name == "IE":
         print('IE')
 
-    driver.get('https://rahulshettyacademy.com/angularpractice/')
+    driver.get('URL')
     driver.maximize_window()
     request.cls.driver = driver
     yield
