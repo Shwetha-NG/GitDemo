@@ -28,19 +28,10 @@ class TestOne(BaseClass):
             if cardText == "Blackberry":
                 checkoutPage.getCardFooter()[i].click()
 
-
         confirmPage = checkoutPage.checkoutItems()
-        # confirmpage = checkoutpage.checkOutItems()
-        # self.driver.find_element(By.XPATH, "//button[@class='btn btn-success']").click()
-        # confirmPage = ConfirmPage(self.driver)
         confirmPage.checkout().click()
-        # log.info("Entering country name as ind")
         log.info('Entering country name as ind')
-        # self.driver.find_element(By.ID, "country").send_keys("ind")
         confirmPage.search_country().send_keys("ind")
-        # time.sleep(5)
-        # element = WebDriverWait(self.driver, 10).until(
-        #     EC.presence_of_element_located(confirmPage.india))   # Moved to baseclass
         self.verifyLinkPresent(confirmPage.india)
         confirmPage.India().click()
         confirmPage.checkbox().click()
