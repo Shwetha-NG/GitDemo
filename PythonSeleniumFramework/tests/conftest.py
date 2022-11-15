@@ -16,10 +16,10 @@ def setup(request):
     global driver
     browser_name = request.config.getoption("browser_name")
     if browser_name == "chrome":
-        service_obj = Service("C:/Users/shwet/chromedriver.exe")
+        service_obj = Service("chromedriver.exe")
         driver = webdriver.Chrome(service=service_obj)
     elif browser_name == "firefox":
-        driver = webdriver.Firefox(executable_path="C:/Users/shwet/geckodriver.exe")
+        driver = webdriver.Firefox(executable_path="geckodriver.exe")
     elif browser_name == "IE":
         print('IE')
 
