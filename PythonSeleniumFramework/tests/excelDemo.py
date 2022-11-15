@@ -1,6 +1,6 @@
 import openpyxl
 
-book = openpyxl.load_workbook("C:\\Users\\shwet\\Downloads\\PythonDemo.xlsx")
+book = openpyxl.load_workbook("\\PythonDemo.xlsx")
 Dict = {}
 sheet = book.active
 cell = sheet.cell(row=1, column=2)
