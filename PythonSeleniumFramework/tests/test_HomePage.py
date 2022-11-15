@@ -24,18 +24,6 @@ class TestHomePage(BaseClass):
         assert 'Success' in message
         self.driver.refresh()
 
-    # Data sets can be passed as tuple.
-    # @pytest.fixture(params=[("Shwetha", "Amogh@123.com", "Female"), ("Amogh", "Nagaraj@123.com", "Male")])
-    # def getData(self, request):
-    #    return request.param
-
-    # Data Sets can also be passed as dictionary.
-    # @pytest.fixture(params=[{"first_name": "Shwetha", "email": "Amogh@123.com", "gender": "Female"},
-    #                         {"first_name": "Amogh", "email": "Nagaraj@123.com", "gender": "Male"}])
-    # def getData(self, request):
-    #     return request.param
-
-    # Created a new folder for testdata. all the test data related to this test case moved to HomePageData.py class.
 
     @pytest.fixture(params=HomePageData.test_Homepage_Data)
     def getData(self, request):
