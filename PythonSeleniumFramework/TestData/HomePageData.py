@@ -7,7 +7,7 @@ class HomePageData:
 
     @staticmethod
     def getTestData(test_case_name):
-        book = openpyxl.load_workbook("C:\\Users\\shwet\\Downloads\\PythonDemo.xlsx")
+        book = openpyxl.load_workbook("\\PythonDemo.xlsx")
         Dict = {}
         sheet = book.active
         for i in range(1, sheet.max_row + 1):
